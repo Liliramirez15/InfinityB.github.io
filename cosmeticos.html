@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;
+width: 100px;
+height: 620px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(19, 6, 6);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #cf736e;
+  color: black;
+}
+body{
+  background-color:  #E8CBC0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+}
+</style>
+</head>
+<body >
+
+<h1 style="text-align:center", id="demo"> Infinite Beauty </h1>
+
+<p>Delineadores</p>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="https://scontent.fsal3-1.fna.fbcdn.net/v/t39.30808-6/295074094_369040465374281_8389880386778532266_n.jpg?stp=dst-jpg_p526x296&_nc_cat=106&ccb=1-7&_nc_sid=a26aad&_nc_ohc=VaIdksq865kAX_s4dEh&_nc_ht=scontent.fsal3-1.fna&oh=00_AT_BToiHJcp60rRHpqt66rZbMqdMHIAuthzND59lbt8bYQ&oe=62DE8D70" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="https://scontent.fsal3-1.fna.fbcdn.net/v/t39.30808-6/294678149_368335818778079_5543088190633426770_n.jpg?stp=dst-jpg_p526x296&_nc_cat=110&ccb=1-7&_nc_sid=a26aad&_nc_ohc=fL_1gfFHL1cAX9r4bWA&_nc_ht=scontent.fsal3-1.fna&oh=00_AT9mB_te7CMmf-WsJJJqzzFwxvP8hKcio-QJAY1Nitayvg&oe=62DEA2A6" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="https://scontent.fsal3-1.fna.fbcdn.net/v/t39.30808-6/293670923_364328139178847_5758919040612602340_n.jpg?stp=dst-jpg_p526x296&_nc_cat=102&ccb=1-7&_nc_sid=a26aad&_nc_ohc=QTXmk-WMM-8AX_A6AF8&_nc_ht=scontent.fsal3-1.fna&oh=00_AT_wpbAEAv3GAzpX5Wt3PiloaFKH6KI5IMSKfUi3JrrclQ&oe=62DFA576" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+<p>Sombras</p>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="https://scontent.fsal2-1.fna.fbcdn.net/v/t39.30808-6/294042690_365641669047494_7938835931014412545_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a26aad&_nc_ohc=8Ar0pc9snb8AX8uwK7T&_nc_ht=scontent.fsal2-1.fna&oh=00_AT9G-DA3GEXumlko0d95_fAJFeDNT1rLjcbFp1_BkUPvuA&oe=62DFE85E" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="https://scontent.fsal3-1.fna.fbcdn.net/v/t39.30808-6/293962944_365641662380828_2431772819091332262_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a26aad&_nc_ohc=u_-o9ZTrl7kAX9fbYOu&_nc_ht=scontent.fsal3-1.fna&oh=00_AT-eRROSfgAft5j2wi9b0cuxEnyOyKqigdIMkvkvpXSZCw&oe=62DFD546" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="https://scontent.fsal3-1.fna.fbcdn.net/v/t39.30808-6/291048166_353637663581228_7367542944450946209_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a26aad&_nc_ohc=tYV90Z3IqIQAX8JXDoa&_nc_ht=scontent.fsal3-1.fna&oh=00_AT9oILbjrm_kkJ08n3GEsrkN1AtkOK2R0O0vfA9G2zUyVg&oe=62E013E7" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+<script>
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+
+
+
+</script>
+<!--onmouse over-->
+<script>
+  document.getElementById("demo").addEventListener("mouseover", mouseOver);
+  document.getElementById("demo").addEventListener("mouseout", mouseOut);
+  
+  function mouseOver() {
+    document.getElementById("demo").style.color = "White";
+  }
+  
+  function mouseOut() {
+    document.getElementById("demo").style.color = "black";
+  }
+  </script>
+</body>
+</html> 
